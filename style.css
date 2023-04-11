@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+body {
+  background: #e8e6e7;
+}
+
+header {
+  padding: 20px 70px; /*20 é em cima em baixo e 70 é dos lados(esquerda e direita)*/
+}
+/*"justify-content: space-between;" é um estilo que pode ser aplicado em um grupo de elementos em uma página da web para que eles fiquem espaçados igualmente ao longo de um eixo horizontal, deixando um espaço em branco entre cada elemento. É útil para criar um layout organizado e equilibrado na página.*/
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation .logo {
+  width: 50px;
+}
+/*gap é para definir o espaço vazio entre elementos de uma grade ou flexbox.*/
+.navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+/*"color: #888;" é usado para definir a cor do texto como um cinza escuro.
+
+"font-weight: 600;" é usado para tornar o texto mais grosso e mais pesado, dando a ele um visual mais destacado.
+
+"padding-bottom:4px;" é usado para adicionar um espaço em branco de 4 pixels na parte de baixo do texto.
+
+"transition: all 0.5s ease-in-out;" é usado para criar uma animação suave quando o mouse passa sobre o texto ou quando alguma mudança é feita em seu estilo.*/
+.navigation ul li a {
+  color: #888;
+  font-weight: 600;
+  padding-bottom:4px;
+  transition: all 0.5s ease-in-out;
+}
+/*"border-bottom", é usada para criar uma borda na parte de baixo do elemento. "1px" é a largura da borda e "solid" é o tipo de borda (uma linha contínua). "#fff" é usado para definir a cor da borda como branca.*/
+.navigation ul li a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.navigation .check {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/*Main*/
+
+/*O "display: flex" faz com que os elementos dentro da seção sejam dispostos em uma linha horizontal. Já o "align-items: center" alinha esses elementos verticalmente no centro da seção. O "justify-content: space-between" faz com que os elementos sejam espaçados igualmente entre si. E por fim, o padding: 5rem 10rem" adiciona um espaço interno de 5 rem na parte de cima e de baixo da seção e de 10 rem nas laterais.*/
+
+main section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+}
+
+/*Este codigo abaixo é usado para mudar o visual de uma imagem que está dentro do texto principal de uma página. O "width: 15rem" define o tamanho da imagem como 15 vezes o tamanho do texto. Já o "margin-bottom: 3vh" cria um espaço entre a imagem e o texto abaixo dela que é equivalente a 3% da altura da tela.*/
+.main-text img {
+  width: 15rem;
+  margin-bottom: 3vh;
+}
+
+/*Este codigo abaixo é um código que ajuda a definir o tamanho e o espaçamento de cabeçalhos em um site. A linha "font-size: 3.5rem" define o tamanho do texto do cabeçalho, enquanto a linha "margin-bottom: 2rem" define o espaço entre o cabeçalho e o próximo elemento da página.*/
+.main-text h3 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-text p {
+  margin-bottom: 1.5rem;
+}
+
+.main-text h6 {
+  color: #999;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* os codigos abaixo de .main-text .btn e .main-text .btn:hover são usadas para estilizar um botão em um site. As propriedades CSS definem como o botão deve parecer e se comportar quando o usuário interage com ele. Por exemplo, o "padding" define a quantidade de espaço entre o texto do botão e sua borda, o "background" define a cor de fundo do botão e o "font-size" define o tamanho da fonte usada no texto do botão. Quando o usuário passa o mouse sobre o botão, a propriedade "hover" faz com que a opacidade do botão mude ligeiramente para dar um efeito visual interessante.*/
+.main-text .btn {
+  padding: 10px 25px;
+  background: #0071e3;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+}
+
+.main-text .btn:hover {
+  opacity: .85;
+}
+
+/*O "font-size" define o tamanho da fonte do texto em relação ao tamanho padrão do site. O "color" define a cor do texto, nesse caso, um cinza escuro (#444).
+
+Já os "margin-top" e "margin-bottom" definem a margem (espaçamento) que haverá acima e abaixo do texto, respectivamente. Nesse caso, ambas as margens são de 2 vezes o tamanho padrão da fonte.*/
+.main-text .text h5 {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.main-text .content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*As linhas "width: 40px;" e "height: 40px;" definem a largura e a altura do botão em pixels, que é a unidade de medida usada em telas de computador.
+
+A linha "border-radius: 50%;" arredonda os cantos do botão, dando uma aparência mais suave.
+
+A linha "cursor: pointer;" faz com que o cursor do mouse mude para uma mão quando passa sobre o botão, indicando que é um elemento clicável.
+
+Por fim, a linha "box-shadow: 1px 1px #888;" adiciona uma sombra ao redor do botão para dar uma sensação de profundidade. A parte "#888" é uma cor em código hexadecimal que determina a cor da sombra.*/
+.main-text .content span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 1px 1px #888;
+  transition: all 0.5s;
+}
+
+.main-text .content span:hover{
+  opacity: .80;
+}
+
+#green {
+  background: #384937;
+}
+
+#pink {
+  background: #f8ddd6;
+}
+
+#blue {
+  background: #225f7e
+}
+
+#black {
+  background: #192028;
+}
+
+#white {
+  background: #f7f2ee;
+}
+
+#red {
+  background: #ae0617;
+}
+
+.main-img {
+  transition: all 1s ease;
+  z-index: 100;
+}
+
+.main-img img {
+  width: 500px;
+  transform: rotate(-7deg);
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #445c42;
+  /*o código abaixo é usada para cortar uma imagem em um círculo com um raio de 800 pixels, localizado à direita e abaixo de 1000 pixels da página. O "width" e "height" referem-se às dimensões da imagem original antes de ser cortada.*/
+  clip-path: circle(800px at right 1000px);
+}
